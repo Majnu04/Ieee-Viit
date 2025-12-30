@@ -3,7 +3,7 @@ import { Track, FeeTable } from './types';
 export const CONFERENCE_DETAILS = {
   name: "2025 IEEE Flagship International VIIT Conference",
   shortName: "VIIT",
-  theme: "Sustainable Development for Innovation and Integration of Engineering and Technology",
+  theme: "Innovation and Integration of Engineering and Technology",
   dates: "November 21-22, 2025",
   location: "Vignan's Institute of Information Technology, Visakhapatnam, Andhra Pradesh, India",
 };

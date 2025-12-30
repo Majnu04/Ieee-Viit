@@ -59,17 +59,22 @@ const Layout: React.FC = () => {
 
       {/* Main Navigation */}
       <header
-        className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-          scrolled ? 'bg-ieee-dark shadow-lg py-2' : 'bg-ieee-dark py-4'
+        className={`sticky top-0 z-50 w-full transition-all duration-300 backdrop-blur ${
+          scrolled ? 'bg-slate-950/90 shadow-lg py-2' : 'bg-slate-950/80 py-4'
         }`}
       >
         <div className="container mx-auto px-4 lg:px-8">
           <nav className="flex items-center justify-between flex-wrap">
           <div className="flex items-center flex-shrink-0 text-white mr-6 gap-3">
-            {/* Logo Placeholder */}
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-ieee-dark font-bold text-xl">
-              V
-            </div>
+               {/* IEEE logo */}
+               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                 <img
+                   src="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/ieee-logo.svg"
+                   alt="IEEE logo"
+                   className="w-8 h-8 object-contain"
+                   loading="lazy"
+                 />
+               </div>
             <div className="flex flex-col">
               <span className="font-bold text-xl tracking-tight text-white">VIIT</span>
               <span className="text-[10px] text-gray-300 uppercase tracking-widest hidden sm:block">IEEE International Conference</span>
@@ -87,10 +92,10 @@ const Layout: React.FC = () => {
 
             <div
               className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${
-                isOpen ? 'block bg-ieee-dark border-t border-ieee-blue mt-4' : 'hidden'
+                isOpen ? 'block bg-slate-950/95 border-t border-ieee-blue mt-4' : 'hidden'
               }`}
             >
-              <div className="text-sm lg:flex-grow lg:flex lg:justify-end gap-1">
+              <div className="text-sm lg:flex-grow lg:flex lg:justify-end gap-1 lg:gap-2">
                 <NavItem to="/" onClick={() => setIsOpen(false)}>Home</NavItem>
                 <NavItem to="/about" onClick={() => setIsOpen(false)}>About</NavItem>
                 <NavItem to="/speakers" onClick={() => setIsOpen(false)}>Speakers</NavItem>

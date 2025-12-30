@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VIIT | Vignan's Institute of Information Technology</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              serif: ['Merriweather', 'serif'],
+              sans: ['IBM Plex Sans', 'Inter', 'sans-serif'],
+              serif: ['Libre Baskerville', 'Merriweather', 'serif'],
+            },
+            letterSpacing: {
+              tightish: '-0.01em'
             },
             colors: {
               ieee: {
@@ -26,10 +29,10 @@
       }
     </script>
     <style>
-      /* Smooth scrolling for the whole page */
-      html {
-        scroll-behavior: smooth;
-      }
+      html { scroll-behavior: smooth; }
+      body { letter-spacing: 0.01em; }
+      h1, h2, h3, h4, h5, h6 { letter-spacing: -0.01em; }
+      a:focus-visible { outline: 2px solid #00B5E2; outline-offset: 3px; }
     </style>
   <script type="importmap">
 {
