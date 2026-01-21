@@ -37,7 +37,7 @@ const FeeTableComponent: React.FC<{ data: FeeTable }> = ({ data }) => (
 const Registration: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
-       <div className="bg-ieee-blue text-white py-16">
+      <div className="bg-ieee-blue text-white py-8">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl font-serif font-bold mb-4">Registration</h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto">

@@ -16,7 +16,7 @@ const Home: React.FC = () => {
             </style>
 
             {/* Hero Section */}
-            <section className="relative h-[600px] flex items-center justify-center text-white overflow-hidden">
+            <section className="relative min-h-[560px] flex items-center justify-center text-white overflow-hidden">
                 {/* Branded IEEE backdrop with gradient */}
                 <div className="absolute inset-0 z-0">
                     <div
@@ -26,35 +26,40 @@ const Home: React.FC = () => {
                             backgroundRepeat: 'no-repeat',
                             backgroundPosition: 'center',
                             backgroundSize: '320px',
-                            opacity: 0.08,
+                            opacity: 0.12,
                         }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-ieee-dark/90 via-ieee-dark/70 to-ieee-blue/75 mix-blend-multiply" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-ieee-dark/95 via-ieee-blue/85 to-ieee-light/60" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-ieee-dark/40 via-transparent to-ieee-dark/70" />
                     <div className="absolute inset-0 opacity-30">
-                        <div className="absolute w-40 h-40 bg-ieee-light/30 rounded-full blur-3xl top-10 left-10 float-slow" />
-                        <div className="absolute w-52 h-52 bg-white/10 rounded-full blur-3xl bottom-6 right-12 float-slow" style={{ animationDelay: '3s' }} />
+                        <div className="absolute w-48 h-48 bg-ieee-light/40 rounded-full blur-3xl top-8 left-8 float-slow" />
+                        <div className="absolute w-64 h-64 bg-ieee-blue/30 rounded-full blur-3xl -bottom-6 right-6 float-slow" style={{ animationDelay: '3s' }} />
+                        <div className="absolute w-32 h-32 bg-white/15 rounded-full blur-2xl top-32 right-24 float-slow" style={{ animationDelay: '6s' }} />
                     </div>
+                    <div className="absolute -top-20 -left-20 w-72 h-72 rounded-full border border-white/20 opacity-40" />
+                    <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full border border-white/10 opacity-30" />
                 </div>
 
                 <div className="container relative z-10 px-4 text-center fade-in-up">
-                    <div className="inline-block px-3 py-1 mb-4 border border-ieee-light text-ieee-light rounded-full text-xs font-semibold tracking-wider uppercase bg-ieee-dark/40">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-5 border border-white/30 text-white/90 rounded-full text-xs font-semibold tracking-wider uppercase bg-white/10 backdrop-blur">
+                        <span className="inline-block w-2 h-2 rounded-full bg-ieee-light" />
                         Hybrid Mode Available
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 font-serif leading-tight">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 font-serif leading-tight">
                         2025 1st IEEE International
                         <br />
                         VIIT Conference
                     </h1>
-                    <p className="text-xl md:text-2xl text-white/80 mb-8 font-light italic">
+                    <p className="text-xl md:text-2xl text-white/85 mb-8 font-light italic">
                         Theme: "{CONFERENCE_DETAILS.theme}"
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-10 text-lg">
-                        <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded backdrop-blur-sm">
+                        <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20">
                             <Calendar className="text-ieee-light" />
                             <span>{CONFERENCE_DETAILS.dates}</span>
                         </div>
-                        <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded backdrop-blur-sm">
+                        <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20">
                             <MapPin className="text-ieee-light" />
                             <span>Visakhapatnam, India</span>
                         </div>
@@ -63,9 +68,15 @@ const Home: React.FC = () => {
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link
                             to="/call-for-papers"
-                            className="px-8 py-3 bg-ieee-light hover:bg-ieee-blue text-white font-semibold rounded shadow-lg transition flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
+                            className="px-8 py-3 bg-ieee-light hover:bg-white text-ieee-dark font-semibold rounded-full shadow-xl transition flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
                         >
                             <BookOpen size={18} /> Submit Paper
+                        </Link>
+                        <Link
+                            to="/registration"
+                            className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full border border-white/30 transition flex items-center justify-center gap-2"
+                        >
+                            Register Now
                         </Link>
                     </div>
                 </div>
@@ -74,30 +85,45 @@ const Home: React.FC = () => {
             {/* About Section */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-6">
-                    <div className="grid md:grid-cols-2 gap-12 items-center fade-in-up">
+                    <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center fade-in-up">
                         <div className="space-y-6 max-w-2xl">
-                            <h2 className="text-3xl font-bold text-ieee-dark font-serif border-l-4 border-ieee-light pl-4">About VIIT Conference</h2>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-ieee-light/40 text-ieee-dark/80 text-xs font-semibold tracking-wider uppercase">
+                                About the Conference
+                            </div>
+                            <h2 className="text-3xl md:text-4xl font-bold text-ieee-dark font-serif leading-tight">
+                                About VIIT Conference
+                            </h2>
                             <p className="text-ieee-dark/80 leading-relaxed text-lg">
-                                The <strong>2025 IEEE Flagship International VIIT Conference</strong> aims to bring together leading academicians, scientists, researchers, and research scholars to exchange and share their experiences and research results on all aspects of Engineering and Technology Innovation.
+                                The <strong>2025 IEEE Flagship International VIIT Conference</strong> brings together leading academicians, scientists, researchers, and research scholars to exchange and share their experiences and research results on all aspects of Engineering and Technology Innovation.
                             </p>
                             <p className="text-ieee-dark/80 leading-relaxed">
-                                It also provides a premier interdisciplinary platform for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Computing, Cybersecurity, Electronics, Power Systems, and Materials Science.
+                                It provides a premier interdisciplinary platform to present and discuss the most recent innovations, trends, and concerns, along with practical challenges and solutions in Computing, Cybersecurity, Electronics, Power Systems, and Materials Science.
                             </p>
-                            <Link to="/about" className="inline-flex items-center text-ieee-blue font-semibold hover:text-ieee-dark transition mt-2">
-                                Read more about the institute <ArrowRight size={16} className="ml-1" />
+                            <div className="grid grid-cols-2 gap-4 pt-2">
+                                <div className="rounded-xl border border-ieee-light/30 bg-white p-4">
+                                    <p className="text-sm text-ieee-dark/70">Tracks</p>
+                                    <p className="text-2xl font-bold text-ieee-dark">5</p>
+                                </div>
+                                <div className="rounded-xl border border-ieee-light/30 bg-white p-4">
+                                    <p className="text-sm text-ieee-dark/70">Dates</p>
+                                    <p className="text-2xl font-bold text-ieee-dark">Nov 21–22</p>
+                                </div>
+                            </div>
+                            <Link to="/about" className="inline-flex items-center gap-2 text-ieee-blue font-semibold hover:text-ieee-dark transition mt-2">
+                                Read more about the institute <ArrowRight size={16} />
                             </Link>
                         </div>
 
-                        <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl group fade-in-up">
-                            <div className="absolute inset-0 z-0 opacity-20 bg-[radial-gradient(circle_at_top,_#00B5E2_0%,_transparent_40%)]" />
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl group fade-in-up">
+                            <div className="absolute inset-0 z-0 opacity-25 bg-[radial-gradient(circle_at_top,_#00B5E2_0%,_transparent_45%)]" />
                             <img
                                 src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1200&q=80"
                                 alt="Conference networking"
-                                className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+                                className="w-full h-[420px] object-cover transform group-hover:scale-105 transition duration-700"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-ieee-dark/70 to-transparent flex items-end p-8">
+                            <div className="absolute inset-0 bg-gradient-to-t from-ieee-dark/80 via-ieee-dark/20 to-transparent flex items-end p-8">
                                 <div className="text-white">
-                                    <p className="font-bold text-lg">Join the Global Network</p>
+                                    <p className="font-bold text-xl">Join the Global Network</p>
                                     <p className="text-sm opacity-90">Connect with experts from around the world.</p>
                                 </div>
                             </div>
