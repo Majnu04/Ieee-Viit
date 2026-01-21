@@ -46,7 +46,7 @@ const Home: React.FC = () => {
                         Hybrid Mode Available
                     </div>
                     <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-5 font-serif leading-tight">
-                        2025 1st IEEE International
+                        2026 1st IEEE International
                         <br />
                         VIIT Conference
                     </h1>
@@ -94,7 +94,7 @@ const Home: React.FC = () => {
                                 About VIIT Conference
                             </h2>
                             <p className="text-ieee-dark/80 leading-relaxed text-lg">
-                                The <strong>2025 IEEE Flagship International VIIT Conference</strong> brings together leading academicians, scientists, researchers, and research scholars to exchange and share their experiences and research results on all aspects of Engineering and Technology Innovation.
+                                The <strong>2026 IEEE Flagship International VIIT Conference</strong> brings together leading academicians, scientists, researchers, and research scholars to exchange and share their experiences and research results on all aspects of Engineering and Technology Innovation.
                             </p>
                             <p className="text-ieee-dark/80 leading-relaxed">
                                 It provides a premier interdisciplinary platform to present and discuss the most recent innovations, trends, and concerns, along with practical challenges and solutions in Computing, Cybersecurity, Electronics, Power Systems, and Materials Science.

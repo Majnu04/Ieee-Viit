@@ -164,7 +164,7 @@ const Layout: React.FC = () => {
           </div>
         </div>
         <div className="container mx-auto px-6 mt-12 pt-6 border-t border-ieee-blue/30 text-center text-xs text-white/60">
-          <p>© 2025 VIIT. All Rights Reserved. IEEE Conference Record #XXXXX.</p>
+          <p>© 2026 VIIT. All Rights Reserved. IEEE Conference Record #XXXXX.</p>
         </div>
       </footer>
     </div>
