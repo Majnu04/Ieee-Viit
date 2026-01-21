@@ -16,30 +16,6 @@ const CallForPapers: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-6 py-12">
-        {/* Conference Highlights */}
-        <div className="max-w-5xl mx-auto mb-16">
-            <div className="bg-white rounded-2xl border border-ieee-light/30 shadow-sm p-8">
-                <h2 className="text-2xl font-bold text-ieee-dark mb-6 text-center">Conference Highlights</h2>
-                <div className="grid gap-6 md:grid-cols-3">
-                    <div className="rounded-xl border border-ieee-light/30 bg-white p-5">
-                        <p className="font-semibold text-ieee-dark">2025 1st IEEE International VIIT Conference</p>
-                        <p className="text-sm text-ieee-dark/70 mt-2">Theme: Innovation and Integration of Engineering and Technology</p>
-                        <p className="text-xs text-ieee-dark/60 mt-3">NOVEMBER 21,22</p>
-                    </div>
-                    <div className="rounded-xl border border-ieee-light/30 bg-white p-5">
-                        <p className="font-semibold text-ieee-dark">2025 1st IEEE International VIIT Conference</p>
-                        <p className="text-sm text-ieee-dark/70 mt-2">Theme: Sustainable Development for Innovation and Integration of Engineering and Technology</p>
-                        <p className="text-xs text-ieee-dark/60 mt-3">NOVEMBER 21,22</p>
-                    </div>
-                    <div className="rounded-xl border border-ieee-light/30 bg-white p-5">
-                        <p className="font-semibold text-ieee-dark">2025 IEEE Flagship International VIIT Conference (VIITCON-25)</p>
-                        <p className="text-sm text-ieee-dark/70 mt-2">Theme: Innovation and Integration of Engineering and Technology</p>
-                        <p className="text-xs text-ieee-dark/60 mt-3">NOVEMBER 21,22</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
         {/* Intro */}
         <div className="max-w-4xl mx-auto mb-16 text-center">
             <p className="text-ieee-dark/80 text-lg leading-relaxed">
