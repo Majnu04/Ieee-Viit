@@ -16,7 +16,7 @@ const NavItem: React.FC<NavItemProps> = ({ to, children, onClick }) => (
       `block px-4 py-2 text-sm font-medium transition-colors duration-200 lg:inline-block lg:mt-0 ${
         isActive
           ? 'text-ieee-light border-b-2 border-ieee-light bg-ieee-dark/5 lg:bg-transparent'
-          : 'text-gray-200 hover:text-white hover:bg-ieee-blue/50 lg:hover:bg-transparent'
+          : 'text-white/80 hover:text-white hover:bg-ieee-blue/50 lg:hover:bg-transparent'
       }`
     }
   >
@@ -43,9 +43,9 @@ const Layout: React.FC = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-800">
+    <div className="flex flex-col min-h-screen font-sans text-ieee-dark">
       {/* Top Banner (Contact/Info) */}
-      <div className="hidden md:flex justify-between items-center bg-gray-100 px-6 py-2 text-xs text-gray-600 border-b">
+      <div className="hidden md:flex justify-between items-center bg-white px-6 py-2 text-xs text-ieee-dark/70 border-b border-ieee-light/30">
         <div className="flex space-x-4">
           <span className="flex items-center gap-1"><Mail size={12} /> vignaniit@yahoo.com</span>
           <span className="flex items-center gap-1"><Phone size={12} /> +91 891 275 5222</span>
@@ -60,7 +60,7 @@ const Layout: React.FC = () => {
       {/* Main Navigation */}
       <header
         className={`sticky top-0 z-50 w-full transition-all duration-300 backdrop-blur ${
-          scrolled ? 'bg-slate-950/90 shadow-lg py-2' : 'bg-slate-950/80 py-4'
+          scrolled ? 'bg-ieee-blue/90 shadow-lg py-2' : 'bg-ieee-blue/80 py-4'
         }`}
       >
         <div className="container mx-auto px-4 lg:px-8">
@@ -69,7 +69,7 @@ const Layout: React.FC = () => {
                {/* IEEE logo */}
                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                  <img
-                   src="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/ieee-logo.svg"
+                   src="/ieee%20mb%20blue.png"
                    alt="IEEE logo"
                    className="w-8 h-8 object-contain"
                    loading="lazy"
@@ -77,14 +77,14 @@ const Layout: React.FC = () => {
                </div>
             <div className="flex flex-col">
               <span className="font-bold text-xl tracking-tight text-white">VIIT</span>
-              <span className="text-[10px] text-gray-300 uppercase tracking-widest hidden sm:block">IEEE International Conference</span>
+              <span className="text-[10px] text-white/70 uppercase tracking-widest hidden sm:block">IEEE International Conference</span>
             </div>
           </div>
 
             <div className="block lg:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white"
+                className="flex items-center px-3 py-2 border rounded text-white/80 border-white/40 hover:text-white hover:border-white"
               >
                 {isOpen ? <X size={20} /> : <Menu size={20} />}
               </button>
@@ -92,7 +92,7 @@ const Layout: React.FC = () => {
 
             <div
               className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${
-                isOpen ? 'block bg-slate-950/95 border-t border-ieee-blue mt-4' : 'hidden'
+                isOpen ? 'block bg-ieee-blue/95 border-t border-ieee-dark/30 mt-4' : 'hidden'
               }`}
             >
               <div className="text-sm lg:flex-grow lg:flex lg:justify-end gap-1 lg:gap-2">
@@ -115,7 +115,7 @@ const Layout: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-300 pt-12 pb-6 border-t border-slate-800">
+      <footer className="bg-ieee-dark text-white/75 pt-12 pb-6 border-t border-ieee-blue/30">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
              <h3 className="text-white text-lg font-bold mb-4">VIIT</h3>
@@ -158,7 +158,7 @@ const Layout: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className="container mx-auto px-6 mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+        <div className="container mx-auto px-6 mt-12 pt-6 border-t border-ieee-blue/30 text-center text-xs text-white/60">
           <p>© 2025 VIIT. All Rights Reserved. IEEE Conference Record #XXXXX.</p>
         </div>
       </footer>

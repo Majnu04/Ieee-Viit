@@ -10,8 +10,8 @@ import Contact from './pages/Contact';
 // Simple placeholders for pages not fully implemented to prevent 404s
 const PlaceholderPage = ({ title }: { title: string }) => (
   <div className="flex items-center justify-center h-[60vh] flex-col">
-    <h1 className="text-4xl font-bold text-gray-300 mb-4">{title}</h1>
-    <p className="text-gray-500">Content coming soon...</p>
+    <h1 className="text-4xl font-bold text-ieee-light mb-4">{title}</h1>
+    <p className="text-ieee-dark/70">Content coming soon...</p>
   </div>
 );
 

@@ -22,7 +22,7 @@ const Home: React.FC = () => {
                     <div
                         className="absolute inset-0"
                         style={{
-                            backgroundImage: "url('https://www.ieee.org/content/dam/ieee-org/ieee/web/org/ieee-logo.svg')",
+                            backgroundImage: "url('/ieee%20mb%20blue.png')",
                             backgroundRepeat: 'no-repeat',
                             backgroundPosition: 'center',
                             backgroundSize: '320px',
@@ -37,7 +37,7 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="container relative z-10 px-4 text-center fade-in-up">
-                    <div className="inline-block px-3 py-1 mb-4 border border-ieee-light text-ieee-light rounded-full text-xs font-semibold tracking-wider uppercase bg-black/30">
+                    <div className="inline-block px-3 py-1 mb-4 border border-ieee-light text-ieee-light rounded-full text-xs font-semibold tracking-wider uppercase bg-ieee-dark/40">
                         Hybrid Mode Available
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold mb-4 font-serif leading-tight">
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
                         <br />
                         VIIT Conference
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light italic">
+                    <p className="text-xl md:text-2xl text-white/80 mb-8 font-light italic">
                         Theme: "{CONFERENCE_DETAILS.theme}"
                     </p>
 
@@ -63,7 +63,7 @@ const Home: React.FC = () => {
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link
                             to="/call-for-papers"
-                            className="px-8 py-3 bg-ieee-light hover:bg-sky-500 text-white font-semibold rounded shadow-lg transition flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
+                            className="px-8 py-3 bg-ieee-light hover:bg-ieee-blue text-white font-semibold rounded shadow-lg transition flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
                         >
                             <BookOpen size={18} /> Submit Paper
                         </Link>
@@ -77,10 +77,10 @@ const Home: React.FC = () => {
                     <div className="grid md:grid-cols-2 gap-12 items-center fade-in-up">
                         <div className="space-y-6 max-w-2xl">
                             <h2 className="text-3xl font-bold text-ieee-dark font-serif border-l-4 border-ieee-light pl-4">About VIIT Conference</h2>
-                            <p className="text-gray-600 leading-relaxed text-lg">
+                            <p className="text-ieee-dark/80 leading-relaxed text-lg">
                                 The <strong>2025 IEEE Flagship International VIIT Conference</strong> aims to bring together leading academicians, scientists, researchers, and research scholars to exchange and share their experiences and research results on all aspects of Engineering and Technology Innovation.
                             </p>
-                            <p className="text-gray-600 leading-relaxed">
+                            <p className="text-ieee-dark/80 leading-relaxed">
                                 It also provides a premier interdisciplinary platform for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Computing, Cybersecurity, Electronics, Power Systems, and Materials Science.
                             </p>
                             <Link to="/about" className="inline-flex items-center text-ieee-blue font-semibold hover:text-ieee-dark transition mt-2">
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
                                 alt="Conference networking"
                                 className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                            <div className="absolute inset-0 bg-gradient-to-t from-ieee-dark/70 to-transparent flex items-end p-8">
                                 <div className="text-white">
                                     <p className="font-bold text-lg">Join the Global Network</p>
                                     <p className="text-sm opacity-90">Connect with experts from around the world.</p>
@@ -111,26 +111,26 @@ const Home: React.FC = () => {
                 <div className="container mx-auto px-6 text-center max-w-3xl fade-in-up">
                     <h2 className="text-3xl font-bold text-ieee-dark mb-8 font-serif">Important Deadlines</h2>
                     <div className="grid gap-6">
-                        <div className="bg-slate-50 p-6 rounded-lg border border-slate-200 flex flex-col md:flex-row justify-between items-center hover:shadow-md transition">
+                        <div className="bg-white p-6 rounded-lg border border-ieee-light/30 flex flex-col md:flex-row justify-between items-center hover:shadow-md transition">
                             <div className="text-left">
-                                <h4 className="font-bold text-lg text-slate-800">Abstract Submission</h4>
-                                <p className="text-sm text-gray-500">Submit your initial research abstract</p>
+                                <h4 className="font-bold text-lg text-ieee-dark">Abstract Submission</h4>
+                                <p className="text-sm text-ieee-dark/70">Submit your initial research abstract</p>
                             </div>
-                            <div className="mt-4 md:mt-0 px-4 py-2 bg-red-100 text-red-700 rounded font-bold">TBA</div>
+                            <div className="mt-4 md:mt-0 px-4 py-2 bg-ieee-light/20 text-ieee-dark rounded font-bold">TBA</div>
                         </div>
-                        <div className="bg-slate-50 p-6 rounded-lg border border-slate-200 flex flex-col md:flex-row justify-between items-center hover:shadow-md transition">
+                        <div className="bg-white p-6 rounded-lg border border-ieee-light/30 flex flex-col md:flex-row justify-between items-center hover:shadow-md transition">
                             <div className="text-left">
-                                <h4 className="font-bold text-lg text-slate-800">Full Paper Submission</h4>
-                                <p className="text-sm text-gray-500">Camera-ready paper submission</p>
+                                <h4 className="font-bold text-lg text-ieee-dark">Full Paper Submission</h4>
+                                <p className="text-sm text-ieee-dark/70">Camera-ready paper submission</p>
                             </div>
-                            <div className="mt-4 md:mt-0 px-4 py-2 bg-yellow-100 text-yellow-800 rounded font-bold">TBA</div>
+                            <div className="mt-4 md:mt-0 px-4 py-2 bg-ieee-light/20 text-ieee-dark rounded font-bold">TBA</div>
                         </div>
-                        <div className="bg-slate-50 p-6 rounded-lg border border-slate-200 flex flex-col md:flex-row justify-between items-center hover:shadow-md transition">
+                        <div className="bg-white p-6 rounded-lg border border-ieee-light/30 flex flex-col md:flex-row justify-between items-center hover:shadow-md transition">
                             <div className="text-left">
-                                <h4 className="font-bold text-lg text-slate-800">Early Bird Registration</h4>
-                                <p className="text-sm text-gray-500">Avail discounted rates</p>
+                                <h4 className="font-bold text-lg text-ieee-dark">Early Bird Registration</h4>
+                                <p className="text-sm text-ieee-dark/70">Avail discounted rates</p>
                             </div>
-                            <div className="mt-4 md:mt-0 px-4 py-2 bg-green-100 text-green-800 rounded font-bold">TBA</div>
+                            <div className="mt-4 md:mt-0 px-4 py-2 bg-ieee-light/20 text-ieee-dark rounded font-bold">TBA</div>
                         </div>
                     </div>
                     <div className="mt-10">

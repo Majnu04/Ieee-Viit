@@ -8,14 +8,14 @@ interface CommitteeMemberProps {
 }
 
 const CommitteeMember: React.FC<CommitteeMemberProps> = ({ name, role, org }) => (
-    <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
-        <div className="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center flex-shrink-0 text-slate-400">
+    <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-ieee-light/10 transition border border-transparent hover:border-ieee-light/30">
+        <div className="w-12 h-12 bg-ieee-light/20 rounded-full flex items-center justify-center flex-shrink-0 text-ieee-blue/60">
             <User size={24} />
         </div>
         <div>
-            <h4 className="font-bold text-slate-800">{name}</h4>
+            <h4 className="font-bold text-ieee-dark">{name}</h4>
             <p className="text-ieee-blue text-sm font-medium">{role}</p>
-            <p className="text-gray-500 text-xs mt-1">{org}</p>
+            <p className="text-ieee-dark/70 text-xs mt-1">{org}</p>
         </div>
     </div>
 )
@@ -23,10 +23,10 @@ const CommitteeMember: React.FC<CommitteeMemberProps> = ({ name, role, org }) =>
 const Committee: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-slate-100 py-16 border-b border-slate-200">
+            <div className="bg-white py-16 border-b border-ieee-light/30">
         <div className="container mx-auto px-6">
           <h1 className="text-4xl font-serif font-bold text-ieee-dark mb-2">Organizing Committee</h1>
-                    <p className="text-gray-600">The team behind VIIT</p>
+                                        <p className="text-ieee-dark/70">The team behind VIIT</p>
         </div>
       </div>
 
@@ -49,8 +49,8 @@ const Committee: React.FC = () => {
                 General Chairs
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <CommitteeMember name="Dr. Name Here" role="Director" org="VIIT Pune" />
-                <CommitteeMember name="Dr. Name Here" role="Principal" org="VIIT Pune" />
+                <CommitteeMember name="Dr. Name Here" role="Director" org="VIIT " />
+                <CommitteeMember name="Dr. Name Here" role="Principal" org="VIIT" />
             </div>
         </div>
 
