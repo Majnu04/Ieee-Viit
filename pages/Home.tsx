@@ -16,7 +16,7 @@ const Home: React.FC = () => {
             </style>
 
             {/* Hero Section */}
-            <section className="relative min-h-[520px] md:min-h-[560px] lg:min-h-[620px] flex items-center justify-center text-white overflow-hidden">
+            <section className="relative min-h-[470px] sm:min-h-[520px] md:min-h-[560px] lg:min-h-[620px] flex items-center justify-center text-white overflow-hidden">
                 {/* Branded IEEE backdrop with gradient */}
                 <div className="absolute inset-0 z-0">
                     <div
@@ -41,40 +41,40 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 text-center fade-in-up">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-5 border border-white/30 text-white/90 rounded-full text-xs font-semibold tracking-wider uppercase bg-white/10 backdrop-blur">
+                    <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 border border-white/30 text-white/90 rounded-full text-[11px] sm:text-xs font-semibold tracking-wider uppercase bg-white/10 backdrop-blur">
                         <span className="inline-block w-2 h-2 rounded-full bg-ieee-light" />
                         Hybrid Mode Available
                     </div>
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 font-serif leading-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-5 font-serif leading-tight">
                         2025 1st IEEE International
                         <br />
                         VIIT Conference
                     </h1>
-                    <p className="text-xl md:text-2xl text-white/85 mb-8 font-light italic">
+                    <p className="text-base sm:text-xl md:text-2xl text-white/85 mb-6 sm:mb-8 font-light italic">
                         Theme: "{CONFERENCE_DETAILS.theme}"
                     </p>
 
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-10 text-lg">
-                        <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 mb-8 sm:mb-10 text-base sm:text-lg">
+                        <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20 w-full sm:w-auto justify-center">
                             <Calendar className="text-ieee-light" />
                             <span>{CONFERENCE_DETAILS.dates}</span>
                         </div>
-                        <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20">
+                        <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20 w-full sm:w-auto justify-center">
                             <MapPin className="text-ieee-light" />
                             <span>Visakhapatnam, India</span>
                         </div>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                    <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
                         <Link
                             to="/call-for-papers"
-                            className="px-8 py-3 bg-ieee-light hover:bg-white text-ieee-dark font-semibold rounded-full shadow-xl transition flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
+                            className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-ieee-light hover:bg-white text-ieee-dark font-semibold rounded-full shadow-xl transition flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
                         >
                             <BookOpen size={18} /> Submit Paper
                         </Link>
                         <Link
                             to="/registration"
-                            className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full border border-white/30 transition flex items-center justify-center gap-2"
+                            className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full border border-white/30 transition flex items-center justify-center gap-2"
                         >
                             Register Now
                         </Link>
