@@ -16,7 +16,7 @@ const Home: React.FC = () => {
             </style>
 
             {/* Hero Section */}
-            <section className="relative min-h-[560px] flex items-center justify-center text-white overflow-hidden">
+            <section className="relative min-h-[520px] md:min-h-[560px] lg:min-h-[620px] flex items-center justify-center text-white overflow-hidden">
                 {/* Branded IEEE backdrop with gradient */}
                 <div className="absolute inset-0 z-0">
                     <div
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
                     <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full border border-white/10 opacity-30" />
                 </div>
 
-                <div className="container relative z-10 px-4 text-center fade-in-up">
+                <div className="container relative z-10 px-4 sm:px-6 lg:px-8 text-center fade-in-up">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-5 border border-white/30 text-white/90 rounded-full text-xs font-semibold tracking-wider uppercase bg-white/10 backdrop-blur">
                         <span className="inline-block w-2 h-2 rounded-full bg-ieee-light" />
                         Hybrid Mode Available
@@ -83,10 +83,10 @@ const Home: React.FC = () => {
             </section>
 
             {/* About Section */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-6">
-                    <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center fade-in-up">
-                        <div className="space-y-6 max-w-2xl">
+            <section className="py-16 md:py-20 bg-white">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-12 items-center fade-in-up">
+                        <div className="space-y-6 max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-ieee-light/40 text-ieee-dark/80 text-xs font-semibold tracking-wider uppercase">
                                 About the Conference
                             </div>
@@ -109,7 +109,7 @@ const Home: React.FC = () => {
                                     <p className="text-2xl font-bold text-ieee-dark">Nov 21–22</p>
                                 </div>
                             </div>
-                            <Link to="/about" className="inline-flex items-center gap-2 text-ieee-blue font-semibold hover:text-ieee-dark transition mt-2">
+                            <Link to="/about" className="inline-flex items-center justify-center lg:justify-start gap-2 text-ieee-blue font-semibold hover:text-ieee-dark transition mt-2">
                                 Read more about the institute <ArrowRight size={16} />
                             </Link>
                         </div>
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl group fade-in-up">
                             <div className="absolute inset-0 z-0 opacity-25 bg-[radial-gradient(circle_at_top,_#00B5E2_0%,_transparent_45%)]" />
                             <img
-                                src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1200&q=80"
+                                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
                                 alt="Conference networking"
                                 className="w-full h-[420px] object-cover transform group-hover:scale-105 transition duration-700"
                             />
@@ -133,8 +133,8 @@ const Home: React.FC = () => {
             </section>
 
             {/* Important Dates Teaser */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-6 text-center max-w-3xl fade-in-up">
+            <section className="py-16 md:py-20 bg-white">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl fade-in-up">
                     <h2 className="text-3xl font-bold text-ieee-dark mb-8 font-serif">Important Deadlines</h2>
                     <div className="grid gap-6">
                         <div className="bg-white p-6 rounded-lg border border-ieee-light/30 flex flex-col md:flex-row justify-between items-center hover:shadow-md transition">
