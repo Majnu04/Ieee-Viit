@@ -83,15 +83,6 @@ const Registration: React.FC = () => {
             </div>
         </div>
 
-        {/* Payment CTA Placeholder */}
-        <div className="mt-12 text-center py-12 bg-white rounded-xl border border-dashed border-ieee-light/40">
-          <CreditCard size={48} className="mx-auto text-ieee-blue/40 mb-4" />
-          <h3 className="text-xl font-bold text-ieee-dark mb-2">Payment Gateway</h3>
-          <p className="text-ieee-dark/70 mb-6">The online payment portal will be activated shortly.</p>
-          <button disabled className="px-6 py-3 bg-ieee-light/20 text-ieee-dark/70 font-semibold rounded cursor-not-allowed">
-                Pay Registration Fee (Coming Soon)
-            </button>
-        </div>
       </div>
     </div>
   );

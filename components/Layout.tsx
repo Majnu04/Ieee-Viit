@@ -117,8 +117,13 @@ const Layout: React.FC = () => {
       {/* Footer */}
       <footer className="bg-ieee-dark text-white/75 pt-12 pb-6 border-t border-ieee-blue/30">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
-             <h3 className="text-white text-lg font-bold mb-4">VIIT</h3>
+           <div className="col-span-1 md:col-span-2">
+             <img
+              src="/ieee%20mb%20blue.png"
+              alt="IEEE logo"
+              className="h-10 w-auto mb-4"
+              loading="lazy"
+             />
              <p className="text-sm leading-relaxed mb-4 max-w-md">
                Theme: Sustainable Development for Innovation and Integration of Engineering and Technology.
                Join us for the 1st IEEE International VIIT Conference to explore the future of technology.
