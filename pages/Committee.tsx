@@ -38,31 +38,35 @@ const Committee: React.FC = () => {
                 Chief Patrons
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <CommitteeMember name="Hon. Name Here" role="Chairman" org="Group of Institutions" />
-                <CommitteeMember name="Hon. Name Here" role="Secretary" org="Group of Institutions" />
+                <CommitteeMember name="Dr. Lavu Rathaiah" role="Chairman" org="Vignan Group of Institutions" />
+                {/* <CommitteeMember name="Lavu Sri Krishna Devarayalu" role="Vice-Chairman" org="Vignan Group of Institutions" /> */}
+                <CommitteeMember name="Shri. Lavu Sri Krishna Devarayalu" role="Vice-Chairman" org="Vignan Group of Institutions" />
             </div>
         </div>
 
-        {/* General Chairs */}
+        {/* Patrons */}
         <div className="mb-16">
-            <h2 className="text-2xl font-bold text-ieee-dark border-b-2 border-ieee-light pb-2 mb-8 inline-block">
-                General Chairs
+            <h2 className="text-2xl font-bolds text-ieee-dark border-b-2 border-ieee-light pb-2 mb-8 inline-block">
+                Patrons
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <CommitteeMember name="Dr. Name Here" role="Director" org="VIIT " />
-                <CommitteeMember name="Dr. Name Here" role="Principal" org="VIIT" />
+                <CommitteeMember name="Dr. Srikant Nandigam" role="CEO" org="Visakhapatnam - Vignan Group of Institutions" />
+                <CommitteeMember name="Dr. Madhusudhan Rao" role="Rector" org="Vignan's Institute of Information Technology, Visakhapatnam" />
+                <CommitteeMember name="Dr. Sudhakar Jyothula" role="Principal" org="Vignan's Institute of Information Technology, Visakhapatnam" />
             </div>
         </div>
 
-        {/* Advisory */}
+        {/* Convenor */}
         <div className="mb-16">
             <h2 className="text-2xl font-bold text-ieee-dark border-b-2 border-ieee-light pb-2 mb-8 inline-block">
-                Technical Advisory Committee
+                Convenor
             </h2>
-            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-                 {[1,2,3,4,5,6,7,8].map(i => (
-                     <CommitteeMember key={i} name={`Prof. Advisor ${i}`} role="Professor" org="International University" />
-                 ))}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <CommitteeMember
+                    name="Dr. Thamatapu Eswara Rao"
+                    role="Associate Professor, Assoc. Dean R&D, Department of EEE"
+                    org="Vignan's Institute of Information Technology, Visakhapatnam"
+                />
             </div>
         </div>
 
