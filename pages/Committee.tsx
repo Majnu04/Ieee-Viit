@@ -59,6 +59,20 @@ const Committee: React.FC = () => {
         {/* Convenor */}
         <div className="mb-16">
             <h2 className="text-2xl font-bold text-ieee-dark border-b-2 border-ieee-light pb-2 mb-8 inline-block">
+                Secretary
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <CommitteeMember
+                    name="Prof. Kranthi Kumar Gangu"
+                    role="Professor in Chemistry and Dean R&D"
+                    org="Vignan's Institute of Information Technology, Visakhapatnam | kkgangu@vignaniit.edu.in | Mobile: +91 9966600092"
+                />
+            </div>
+        </div>
+
+        {/* Convenor */}
+        <div className="mb-16">
+            <h2 className="text-2xl font-bold text-ieee-dark border-b-2 border-ieee-light pb-2 mb-8 inline-block">
                 Convenor
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

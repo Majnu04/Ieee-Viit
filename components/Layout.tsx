@@ -97,8 +97,6 @@ const Layout: React.FC = () => {
             >
               <div className="text-sm lg:flex-grow lg:flex lg:justify-end gap-1 lg:gap-2">
                 <NavItem to="/" onClick={() => setIsOpen(false)}>Home</NavItem>
-                <NavItem to="/about" onClick={() => setIsOpen(false)}>About</NavItem>
-                <NavItem to="/speakers" onClick={() => setIsOpen(false)}>Speakers</NavItem>
                 <NavItem to="/call-for-papers" onClick={() => setIsOpen(false)}>Call for Papers</NavItem>
                 <NavItem to="/committee" onClick={() => setIsOpen(false)}>Committee</NavItem>
                 <NavItem to="/registration" onClick={() => setIsOpen(false)}>Registration</NavItem>
